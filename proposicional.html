@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora Lógica</title>
+		<script src="main.js" async></script>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="title wrapper">
+				<h1 class="title">
+					<span class="calculadora">Calculadora de </span
+					><span class="logicaProposicional">Lógica Proposicional</span>
+				</h1>
+			</div>
+			<div class="allSelects wrapper">
+				<button class="p click toggle true" autofocus>
+					p
+				</button>
+				<select class="o click" name="operator" autofocus required>
+					<option value="~">~</option>
+					<option value="∧">∧</option>
+					<option value="∨">∨</option>
+					<option value="→">→</option>
+					<option value="↔">↔</option>
+					<option value="⊻">⊻</option>
+				</select>
+				<button class="q click toggle true" autofocus>
+					q
+				</button>
+			</div>
+			<div class="send wrapper">
+				<button class="click send">
+					👇😗
+				</button>
+			</div>
+			<div class="list wrapper">
+				<ul class="itemsList list"></ul>
+			</div>
+		</div>
+	</body>
+</html>
