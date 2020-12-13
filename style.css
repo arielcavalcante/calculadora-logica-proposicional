@@ -1,5 +1,5 @@
 :root {
-	font-size: 3.5vw;
+	font-size: 4.5vw;
 	font-family: 'Courier New', Courier, monospace;
 	background-color: #dcedef;
 }
@@ -12,9 +12,8 @@
 
 /* where the magic happens */
 .main {
-	max-width: 37.5rem;
 	height: 15rem;
-	padding: 3rem;
+	padding: 1rem;
 	margin: auto;
 	display: block;
 	align-items: center;
@@ -29,16 +28,17 @@
 }
 
 .title .calculadora {
-	font-size: 2.1rem;
+	font-size: 2rem;
 	line-height: 150%;
 }
 
 .logicaProposicional {
 	font-weight: lighter;
-	font-size: 1.525rem;
+	font-size: 1.375rem;
 }
 
 .list > li {
+	font-size: 1rem;
 	margin: 0.5rem 0;
 }
 
@@ -83,7 +83,7 @@
 .send.click:hover {
 	background: #dcedef;
 	box-shadow: 0.125rem 0.125rem 0.5rem #bbc9cb,
-		-0.125rem -0.125rem 0.5rem #fdffff;
+		-0.125rem -0.125rem 0.5rem #fdffff, 0.125rem 0.125rem 5rem 1rem #bbc9cb55;
 }
 
 .send.click:active {
@@ -104,16 +104,16 @@
 }
 
 /* Toggle states */
+.toggle {
+	background: linear-gradient(145deg, #ffaaa5, #e08f8b);
+	box-shadow: 0.3rem 0.3rem 5rem -0.4rem #d48783,
+		-0.3rem -0.3rem 5rem -0.4rem #ffb7b1;
+}
+
 .toggle.true {
 	background: linear-gradient(145deg, #6ff3af, #5ecc94);
 	box-shadow: 0.3rem 0.3rem 5rem -0.7rem #58c18b,
 		-0.3rem -0.3rem 5rem -0.7rem #78ffbd;
-}
-
-.toggle {
-	background: linear-gradient(145deg, #ffaaa5, #e08f8b);
-	box-shadow: 0.3rem 0.3rem 5rem -0.7rem #d48783,
-		-0.3rem -0.3rem 5rem -0.7rem #ffb7b1;
 }
 
 .hide {
@@ -121,7 +121,7 @@
 }
 /* Hover */
 .click:hover {
-	box-shadow: 0.25rem 0.25rem 0.5rem -0.25rem #bbc9cb;
+	box-shadow: 0.25rem 0.25rem 5rem 2rem #99999933;
 	cursor: pointer;
 }
 
@@ -146,4 +146,46 @@ select {
 
 select::-ms-expand {
 	display: none;
+}
+
+@media (min-width: 426px) {
+	:root {
+		font-size: 3.5vw;
+	}
+	.main {
+		padding: 3rem;
+	}
+	.title {
+		letter-spacing: 0.125rem;
+	}
+	.list > li {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1025px) {
+	:root {
+		font-size: 2vw;
+	}
+
+	.main {
+		margin-top: 4rem;
+		width: 36rem;
+	}
+	.calculadora {
+		letter-spacing: 0.65rem;
+	}
+	.logicaProposicional {
+		font-size: 2rem;
+		letter-spacing: 0.125rem;
+	}
+	.click {
+		font-size: 1rem;
+		padding: 0.25rem 3rem;
+	}
+}
+@media (min-width: 1201px) {
+	:root {
+		font-size: 1.75vw;
+	}
 }
