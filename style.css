@@ -1,0 +1,191 @@
+:root {
+	font-size: 4.5vw;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #dcedef;
+}
+
+* {
+	margin: 0;
+	font-size: 0.8rem;
+	box-sizing: border-box;
+}
+
+/* where the magic happens */
+.main {
+	height: 15rem;
+	padding: 1rem;
+	margin: auto;
+	display: block;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.wrapper {
+	display: block;
+	margin: 0;
+	padding: 1.5rem;
+}
+
+.title .calculadora {
+	font-size: 2rem;
+	line-height: 150%;
+}
+
+.logicaProposicional {
+	font-weight: lighter;
+	font-size: 1.375rem;
+}
+
+.list > li {
+	font-size: 1rem;
+	margin: 0.5rem 0;
+}
+
+.itemsList {
+	display: block;
+	list-style-type: none;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding: 0;
+}
+
+.doubleButton {
+	display: flex;
+}
+
+.allSelects {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.log {
+	height: 100%;
+	width: 100%;
+	background-color: aliceblue;
+	padding: 0.625rem;
+	margin-top: 0.5rem;
+}
+
+/* Button styles */
+.send.click {
+	width: 100%;
+	text-indent: 0;
+	background-color: white;
+	padding: 0.25rem 0.6125rem;
+	border: white;
+	background: linear-gradient(145deg, #ebfeff, #c6d5d7);
+	box-shadow: 0.125rem 0.125rem 0.5rem #bbc9cb,
+		-0.125rem -0.125rem 0.5rem #fdffff;
+}
+
+.send.click:hover {
+	background: #dcedef;
+	box-shadow: 0.125rem 0.125rem 0.5rem #bbc9cb,
+		-0.125rem -0.125rem 0.5rem #fdffff, 0.125rem 0.125rem 5rem 1rem #bbc9cb55;
+}
+
+.send.click:active {
+	background: linear-gradient(145deg, #c6d5d7, #ebfeff);
+}
+
+/* Buttons click area and style */
+.click {
+	line-height: 2;
+	display: block;
+	padding: 0.25rem 2rem;
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+.click:focus {
+	outline-color: steelblue;
+}
+
+/* Toggle states */
+.toggle {
+	background: linear-gradient(145deg, #ffaaa5, #e08f8b);
+	box-shadow: 0.3rem 0.3rem 5rem -0.4rem #d48783,
+		-0.3rem -0.3rem 5rem -0.4rem #ffb7b1;
+}
+
+.toggle.true {
+	background: linear-gradient(145deg, #6ff3af, #5ecc94);
+	box-shadow: 0.3rem 0.3rem 5rem -0.7rem #58c18b,
+		-0.3rem -0.3rem 5rem -0.7rem #78ffbd;
+}
+
+.hide {
+	display: none;
+}
+/* Hover */
+.click:hover {
+	box-shadow: 0.25rem 0.25rem 5rem 2rem #99999933;
+	cursor: pointer;
+}
+
+/* Dropdown styles */
+.click.o {
+	text-align: center;
+	text-align-last: center;
+	-moz-text-align-last: center;
+	-ms-text-align-last: center;
+	direction: ltr;
+	text-indent: 0.025rem;
+	background: #dcedef;
+	border-radius: 0.25rem;
+	box-shadow: inset 0.125rem 0.125rem 1.5rem #bbc9cb,
+		inset -0.125rem -0.125rem 1.5rem #fdffff;
+}
+
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+@media (min-width: 426px) {
+	:root {
+		font-size: 3.5vw;
+	}
+	.main {
+		padding: 3rem;
+	}
+	.title {
+		letter-spacing: 0.125rem;
+	}
+	.list > li {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1025px) {
+	:root {
+		font-size: 2vw;
+	}
+
+	.main {
+		margin-top: 4rem;
+		width: 36rem;
+	}
+	.calculadora {
+		letter-spacing: 0.65rem;
+	}
+	.logicaProposicional {
+		font-size: 2rem;
+		letter-spacing: 0.125rem;
+	}
+	.click {
+		font-size: 1rem;
+		padding: 0.25rem 3rem;
+	}
+}
+@media (min-width: 1201px) {
+	:root {
+		font-size: 1.75vw;
+	}
+}
